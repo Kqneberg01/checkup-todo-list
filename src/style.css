@@ -21,7 +21,7 @@ input{
     border: 1px solid rgb(226, 222, 222);
     border-radius: 15px;
     padding: 0 15px;
-    margin-bottom: px;
+    margin-top: 15px;
 }
 input:hover {
     box-shadow: 0 0 25px -1px rgb(121, 70, 160);
@@ -41,7 +41,8 @@ button:hover {
     }
 
 ul{
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 h2{
@@ -50,7 +51,7 @@ h2{
     justify-content: center;
 }
 
-.registration {
+.registration, .login {
     display: block;
     margin: 40px auto 0;
     width:25%;
@@ -61,26 +62,7 @@ h2{
     box-shadow: 0 0 20px -2px black;
 }
 
-.login{
-    display: block;
-    margin: 40px auto 0;
-    width:25%;
-    height: 250px;
-    border: 2px solid;
-    background-color: #8d8ab5;
-    border-radius: 15px 15px 15px 15px;
-    box-shadow: 0 0 20px -2px black;
-}
-
-.registration_form{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin-right: 20px;
-    margin-left: 20px;
-}
-
-.login_form{
+.registration_form,.login_form {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
