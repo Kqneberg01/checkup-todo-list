@@ -1,142 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 * {
     padding: 0;
     margin: 0;
 }
 
-.flex {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-}
-
-.container {
-    width: 50%;
-    margin: 40px auto 0;
-}
-
-body {
+body{
     background: rgb(238,174,202);
     background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(58,106,163,1) 100%);
     font-family: "Roboto", serif;
-    font-weight: 400;
+    font-optical-sizing: auto;
+    font-weight: 500;
     font-style: normal;
-}
-.card {
-    background-color: white;
-    border-radius: 15px;
-    border: 0;
-    box-shadow: 0 0 20px -2px black;
+    font-variation-settings:"wdth" 100;
 }
 
-.registration {
-    width: 50%;
-    padding: 50px;
-    background-color: rgb(184 154 190);
-    border-radius: 15px 0 0 15px;
-}
-
-.login {
-    width: 50%;
-    background-color: #8d8ab5;
-    height: 250px;
-    padding: 50px;
-    border-radius: 0 15px 15px 0;
-    color: black;
-}
-
-input {
-    width: calc(100% - 30px);
+input{
+    width: 100%;
     height: 45px;
     border: 1px solid rgb(226, 222, 222);
     border-radius: 15px;
     padding: 0 15px;
-    margin-bottom: 15px;
+    margin-bottom: px;
 }
-
 input:hover {
     box-shadow: 0 0 25px -1px rgb(121, 70, 160);
 }
 
-h1 {
-    margin-bottom: 20px;
-}
-
 button {
+    display: block;
+    margin-top: 15px;
     width: 100%;
     height: 40px;
     border-radius: 15px;
     background-color: blueviolet;
     color: white;
 }
-
 button:hover {
-box-shadow: 0 0 15px -3px rgb(147, 76, 201);
-}
+    box-shadow: 0 0 15px -3px rgb(147, 76, 201);
+    }
 
-.task-list {
-    width: 100%;
-    margin: 50px auto 0;
-}
-
-h2 {
-    margin-bottom: 15px;
-}
-
-.sample {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: space-between
-}
-
-.card-task {
-    background-color: white;
-    border-radius: 15px;
-    border: 0;
-    box-shadow: 0 0 20px -2px black;
-    padding: 40px;
-}
-
-
-ul {
+ul{
     margin-bottom: 20px;
 }
 
-@media (max-width: 900px) {
-  
-    .flex{
-        flex-direction: column;
-        text-align: center; 
-        width: 154.8%;
-    } 
-
-    .card-task{
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .registration{
-        border-radius: 15px 15px 0 0;
-    }   
-         
-    .login{
-        border-radius: 0 0 15px 15px;
-    }
+h2{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
 }
 
-@media (max-width:500px) {
- 
-    h1{
-       font-size: 1.3rem;
-   }
+.registration {
+    display: block;
+    margin: 40px auto 0;
+    width:25%;
+    height: 250px;
+    border: 2px solid;
+    background-color: rgb(184 154 190);
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 0 0 20px -2px black;
+}
+
+.login{
+    display: block;
+    margin: 40px auto 0;
+    width:25%;
+    height: 250px;
+    border: 2px solid;
+    background-color: #8d8ab5;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 0 0 20px -2px black;
+}
+
+.registration_form{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.login_form{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.task-list{
+    display: block;
+    margin: 40px auto 20px;
+    width:40%;
+    height: 350px;
+    border: 2px solid;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 0 0 20px -2px black;
+}
+
+.task-list-form{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-right: 40px;
+    margin-left: 40px;
+}
+
+@media(max-width: 650px){
+    input{
+        font-size: 10px;
+    }
     h2{
-       font-size: 1.3rem;
-   }
-    button{
-       font-size: 0.7rem;
-   }
+        font-size: 14px;
+    }
+    ul{
+        font-size: 10px;
+    }
+    .registration_submit{
+        font-size: 7px;
+    }
+    .task-list{
+        height: 290px;
+    }
 }
-
-
-
